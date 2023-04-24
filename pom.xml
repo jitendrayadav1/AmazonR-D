@@ -45,7 +45,7 @@
             </property> -->
             <property>
               <name>listener</name>
-              <value>com.kotak.utilities.ExtentListeners</value>
+              <value>Utils.ExtentListeners</value>
             </property>
           </properties>
     </configuration>
