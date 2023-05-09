@@ -23,7 +23,7 @@ public class TestData {
 	public String max;
 	public TestData() throws Exception
 	{
-   FileInputStream fis=new FileInputStream("F:\\Workspace3\\AmazonRnDProject\\datafiles\\login.xlsx");
+   FileInputStream fis=new FileInputStream("D:\\KOTAKDEMO\\AmazonRnDProject\\datafiles\\login.xlsx");
 		
 		XSSFWorkbook wrk=new XSSFWorkbook(fis);
 		XSSFSheet sht=wrk.getSheet("Book1");

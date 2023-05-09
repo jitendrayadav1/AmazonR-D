@@ -4,14 +4,15 @@
   <listeners>
     <listener class-name="Utils.ExtentListeners"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="TestonEdge(failed)">
+    <parameter name="browser" value="edge"/>
     <classes>
-      <class name="TestCases.E2E_OrderTest">
+      <class name="TestCases.E2E_negativeTest">
         <methods>
           <include name="placeOrder"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- TestCases.E2E_OrderTest -->
+      </class> <!-- TestCases.E2E_negativeTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- TestonEdge(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -63,9 +63,22 @@ public class OrderPage {
 			}
 		}
 	}
+	
+	
+	@FindBy(xpath="//input[@id='mbb-offeringID-1']") WebElement extended_Warranty;
 		
+	public WebElement extended_Warranty() {
+		return extended_Warranty;
+	}
+	
+	@FindBy(xpath="//span[@class='a-color-price']") WebElement ewPrice;
+
+	public WebElement getEwPrice() {
+		return ewPrice;
+	}
+
 	//click on cart button 
-	@FindBy(xpath="//div[@id='nav-cart-count-container']") WebElement cart;
+	@FindBy(xpath="//div[@id='nav-cart-text-container']//span[@class='nav-line-2']") WebElement cart;
 	public WebElement getCart() {
 		return cart;
 	}
@@ -76,7 +89,12 @@ public class OrderPage {
 		return singleprize;
 	}
 	
+	@FindBy(xpath="(//span[@class='a-dropdown-prompt'])[2]") WebElement ewqty;
 	
+	public WebElement getEwqty() {
+		return ewqty;
+	}
+
 	//get total prize
 	@FindBy(xpath="//span[@id='sc-subtotal-amount-activecart']") WebElement total;
 	public WebElement getTotal() {
@@ -91,6 +109,16 @@ public class OrderPage {
 		Integer a_Amount=(int)Math.round(a);
 		return a_Amount;
 	}
+	public Integer dataConversion1(String actual)
+	{
+		String actualP=actual.trim().replace("₹","");
+		System.out.println(actualP);
+		//String actualPP=actualP.replaceAll(".","");
+		double a = Double.parseDouble(actualP);
+		Integer a_Amount=(int)Math.round(a);
+		return a_Amount;
+	}
+	
 	
 	@FindBy(xpath="(//input[@type='submit'])[2]") WebElement proceedToBy;
 	public WebElement getProceedToBy() {
