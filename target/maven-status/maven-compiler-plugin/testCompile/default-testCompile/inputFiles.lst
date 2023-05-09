@@ -1,8 +1,9 @@
-F:\Workspace3\AmazonRnDProject\src\test\java\PageObject\LoginPage.java
-F:\Workspace3\AmazonRnDProject\src\test\java\TestCases\E2E_OrderTest.java
-F:\Workspace3\AmazonRnDProject\src\test\java\PageObject\OrderPage.java
-F:\Workspace3\AmazonRnDProject\src\test\java\Utils\ExtentManager.java
-F:\Workspace3\AmazonRnDProject\src\test\java\CommonActions\BaseTest.java
-F:\Workspace3\AmazonRnDProject\src\test\java\Utils\TestData.java
-F:\Workspace3\AmazonRnDProject\src\test\java\Utils\ExtentListeners.java
-F:\Workspace3\AmazonRnDProject\src\test\java\Utils\ReadConfig.java
+D:\KOTAKDEMO\AmazonRnDProject\src\test\java\Utils\ExtentListeners.java
+D:\KOTAKDEMO\AmazonRnDProject\src\test\java\TestCases\E2E_negativeTest.java
+D:\KOTAKDEMO\AmazonRnDProject\src\test\java\PageObject\LoginPage.java
+D:\KOTAKDEMO\AmazonRnDProject\src\test\java\Utils\TestData.java
+D:\KOTAKDEMO\AmazonRnDProject\src\test\java\Utils\ReadConfig.java
+D:\KOTAKDEMO\AmazonRnDProject\src\test\java\TestCases\E2E_OrderTest.java
+D:\KOTAKDEMO\AmazonRnDProject\src\test\java\Utils\ExtentManager.java
+D:\KOTAKDEMO\AmazonRnDProject\src\test\java\CommonActions\BaseTest.java
+D:\KOTAKDEMO\AmazonRnDProject\src\test\java\PageObject\OrderPage.java
