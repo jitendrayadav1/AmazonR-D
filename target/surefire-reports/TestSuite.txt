@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 121.414 s <<< FAILURE! - in TestSuite
+placeOrder(TestCases.E2E_OrderTest)  Time elapsed: 32.085 s  <<< FAILURE!
+java.lang.NumberFormatException: For input string: "₹279.00"
+	at TestCases.E2E_OrderTest.placeOrder(E2E_OrderTest.java:97)
+
+placeOrder(TestCases.E2E_negativeTest)  Time elapsed: 53.422 s  <<< FAILURE!
+java.lang.AssertionError: Assertion on Principal amount is not successfull expected [10977] but found [8713]
+	at TestCases.E2E_negativeTest.placeOrder(E2E_negativeTest.java:107)
+

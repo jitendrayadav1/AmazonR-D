@@ -71,11 +71,7 @@ public class OrderPage {
 		return extended_Warranty;
 	}
 	
-	@FindBy(xpath="//span[@class='a-color-price']") WebElement ewPrice;
-
-	public WebElement getEwPrice() {
-		return ewPrice;
-	}
+	
 
 	//click on cart button 
 	@FindBy(xpath="//div[@id='nav-cart-text-container']//span[@class='nav-line-2']") WebElement cart;
@@ -89,6 +85,11 @@ public class OrderPage {
 		return singleprize;
 	}
 	
+	@FindBy(xpath="//div[@class='sc-item-price-block']//span[contains(text(),'279')]") WebElement ewPrice;
+
+	public WebElement getEwPrice() {
+		return ewPrice;
+	}
 	@FindBy(xpath="(//span[@class='a-dropdown-prompt'])[2]") WebElement ewqty;
 	
 	public WebElement getEwqty() {

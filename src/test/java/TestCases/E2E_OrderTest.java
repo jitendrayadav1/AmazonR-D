@@ -89,37 +89,45 @@ public class E2E_OrderTest extends BaseTest {
 		Thread.sleep(2000);
 		order.UserWindowHandle(driver);
 		
-		Thread.sleep(1200);
-		order.extended_Warranty().click();
-		
-		String ewarPrice = order.getEwPrice().getText();
-		System.out.println(ewarPrice);
-		int b=order.dataConversion1(ewarPrice);
-             
 		WebElement ele= driver.findElement(By.id("quantity"));
 		Select sel=new Select(ele);
 		sel.selectByValue("2");
 		 e.test.log(Status.INFO,"Product quantity selected");
-		 
-		 
-		 
+		
+		Thread.sleep(1200);
+		order.extended_Warranty().click();
+		
+		
+		
+
+
+
 		 //Thread.sleep(2000);
 		//click on add to cart
 		order.getAddToCart().click();
-		
+        Thread.sleep(1400);
+		//click on cart
+				order.getCart().click();
 		Thread.sleep(1400);
+		
+		Thread.sleep(1200);
+		String ewarPrice = order.getEwPrice().getText();
+		System.out.println(ewarPrice);
+		int b=order.dataConversion1(ewarPrice);
+		System.out.println("this is converted price of extended warranty:"+b);
+
 		String ewtqty = order.getEwqty().getText();
 		double ewt = Double.parseDouble(ewtqty);
 		int ewt1 = (int)Math.round(ewt);
 		System.out.println(ewt1);
+
+
 		
-		
-		//click on cart
-		order.getCart().click();
 		String actual = order.getSingleprize().getText();
 		int a=order.dataConversion(actual);
+		//Integer actTotal=a*2;//for 2 product
 		Integer actTotal=(a*2)+(b*ewt1);//for 2 product
-		
+
 		String actual1= order.getTotal().getText();
 		int expTotal=order.dataConversion(actual1);
         assertEquals(expTotal,actTotal,"Assertion on Principal amount is not successfull");
@@ -127,13 +135,12 @@ public class E2E_OrderTest extends BaseTest {
         //click on proceed to by
         Thread.sleep(2500);
         order.getProceedToBy().click();
-        
-        
+
+
         //click on use this address
         order.getUseThisAddress().click();
         e.test.log(Status.INFO," Done!!! Product Orderd completed");
 	}
 	
-
-
 }
+ 
